@@ -18,7 +18,8 @@ jobs:
       run: curl --silent http://127.0.0.1:4040/api/tunnels | jq '.tunnels[0].public_url'
     - name: ntfy
       run: curl -d "check github action" ntfy.sh/easonntfy
-
+    - name: ntfy passwd 
+      run: curl -d "log in chnage passwd" ntfy.sh/easonntfy
     - name: Setup tmate Session
       uses: mxschmitt/action-tmate@v2
     
